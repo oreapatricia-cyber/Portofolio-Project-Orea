@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceviche 🐠</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: black;
+      padding-top: 15px;
+      padding-bottom: 30px;
+      font-size: medium;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2 {
+      text-align: center;
+      color: black;
+      border: 2px solid black;
+      line-height: 1.5;
+      padding: 15px;
+      margin: 0 auto;
+      margin-left: auto;
+      font-size: 16px;
+      border-radius: 20px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 85%;
+      border-radius: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .learn-more {
+      display: block;
+      color: black;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      font-size: 18px;
+      padding: 15px 20px;
+      color: black;
+      border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    }
+    body {
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    }
+    button:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    .footer {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0% auto;
+      padding: 30px 60px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>
+        <strong> Ceviche is my favorite dish! 🐠 🐠 🐠 </strong>
+      </h1>
+      <h2>Especially Peruvian Style Ceviche</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/954/original/CevichePhoto.jpg?1702419806"
+        alt="Ceviche"
+      />
+      <hr />
+      <p>
+        <em>
+          Ceviche, cebiche, sebiche, or seviche is a dish consisting of fish or
+          shellfish marinated in citrus and seasonings, recognized by UNESCO as
+          an expression of Peruvian traditional cuisine and Intangible Cultural
+          Heritage of Humanity. Although different versions of ceviche are part
+          of the culinary culture of various Spanish-American countries along
+          the Pacific Ocean where each one is native: Chile, Colombia, Costa
+          Rica, Ecuador, El Salvador, Guatemala, Honduras, Mexico, Nicaragua,
+          Panama and Peru. In Peru it is also considered a flagship dish and
+          cultural heritage.
+        </em>
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Ceviche"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <p>
+        <button class="try-button">👉 Try Ceviche</button>
+      </p>
+      <p class="footer">
+        This page was created by
+        <a href="https://www.instagram.com/oreapatricia76/" target="_blank">
+          Patricia J. Orea
+        </a>
+      </p>
+    </div>
+    <script>
+      function trial() {
+        let question = prompt("Have you tried Ceviche Before?");
+        if (question === "yes") {
+          alert(" I am so glad you enjoyed it 😃");
+        } else {
+          if (question === "no") {
+            alert("Trying Ceviche wil not hurt 🤭");
+          }
+        }
+      }
+      let tryButton = document.querySelector(".try-button");
+      tryButton.addEventListener("click", trial);
+    </script>
+  </body>
+</html>
